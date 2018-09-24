@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		79227D18215932CC00A5F9D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79227D17215932CC00A5F9D2 /* main.m */; };
+		79227D202159332C00A5F9D2 /* DEAutoreleasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 79227D1F2159332C00A5F9D2 /* DEAutoreleasePool.m */; };
+		79227D242159645600A5F9D2 /* NSObject+DEAutorelease.m in Sources */ = {isa = PBXBuildFile; fileRef = 79227D232159645600A5F9D2 /* NSObject+DEAutorelease.m */; };
+		79227D27215965F500A5F9D2 /* DEObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 79227D26215965F500A5F9D2 /* DEObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		79227D14215932CC00A5F9D2 /* DEAutoreleasePool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DEAutoreleasePool; sourceTree = BUILT_PRODUCTS_DIR; };
 		79227D17215932CC00A5F9D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79227D1E2159332C00A5F9D2 /* DEAutoreleasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEAutoreleasePool.h; sourceTree = "<group>"; };
+		79227D1F2159332C00A5F9D2 /* DEAutoreleasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEAutoreleasePool.m; sourceTree = "<group>"; };
+		79227D222159645600A5F9D2 /* NSObject+DEAutorelease.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DEAutorelease.h"; sourceTree = "<group>"; };
+		79227D232159645600A5F9D2 /* NSObject+DEAutorelease.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DEAutorelease.m"; sourceTree = "<group>"; };
+		79227D25215965F500A5F9D2 /* DEObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEObject.h; sourceTree = "<group>"; };
+		79227D26215965F500A5F9D2 /* DEObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEObject.m; sourceTree = "<group>"; };
+		79227D292159774F00A5F9D2 /* DEAutoreleasePool-Prefix copy.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DEAutoreleasePool-Prefix copy.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			children = (
 				79227D16215932CC00A5F9D2 /* DEAutoreleasePool */,
 				79227D15215932CC00A5F9D2 /* Products */,
+				79227D292159774F00A5F9D2 /* DEAutoreleasePool-Prefix copy.pch */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				79227D17215932CC00A5F9D2 /* main.m */,
+				79227D1E2159332C00A5F9D2 /* DEAutoreleasePool.h */,
+				79227D1F2159332C00A5F9D2 /* DEAutoreleasePool.m */,
+				79227D25215965F500A5F9D2 /* DEObject.h */,
+				79227D26215965F500A5F9D2 /* DEObject.m */,
+				79227D222159645600A5F9D2 /* NSObject+DEAutorelease.h */,
+				79227D232159645600A5F9D2 /* NSObject+DEAutorelease.m */,
 			);
 			path = DEAutoreleasePool;
 			sourceTree = "<group>";
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79227D242159645600A5F9D2 /* NSObject+DEAutorelease.m in Sources */,
+				79227D27215965F500A5F9D2 /* DEObject.m in Sources */,
 				79227D18215932CC00A5F9D2 /* main.m in Sources */,
+				79227D202159332C00A5F9D2 /* DEAutoreleasePool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +186,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DEAutoreleasePool-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -223,6 +244,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DEAutoreleasePool-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -239,6 +261,7 @@
 		79227D1C215932CC00A5F9D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +270,7 @@
 		79227D1D215932CC00A5F9D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

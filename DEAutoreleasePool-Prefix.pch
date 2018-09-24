@@ -1,0 +1,14 @@
+//
+//  DEAutoreleasePool-Prefix.pch
+//  DEAutoreleasePool
+//
+//  Created by Domagoj Eklic on 9/24/18.
+//  Copyright © 2018 Domagoj Eklic. All rights reserved.
+//
+
+#ifndef DEAutoreleasePool_Prefix_pch
+#define DEAutoreleasePool_Prefix_pch
+
+#import <Foundation/Foundation.h>
+
+#endif /* DEAutoreleasePool_Prefix_pch */

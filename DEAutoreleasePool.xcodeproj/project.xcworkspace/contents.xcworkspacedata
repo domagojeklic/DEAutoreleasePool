@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../DEAutoreleasePool-Prefix.pch">
+   </FileRef>
+   <FileRef
       location = "self:DEAutoreleasePool.xcodeproj">
    </FileRef>
 </Workspace>
